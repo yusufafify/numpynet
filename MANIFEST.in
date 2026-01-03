@@ -1,0 +1,22 @@
+# Include documentation and license
+include README.md
+include LICENSE
+include QUICKSTART.md
+include STRUCTURE.md
+include CONTRIBUTING.md
+
+# Exclude development and build files
+exclude .gitignore
+exclude run_tests.py
+exclude CLEANUP_SUMMARY.md
+
+# Exclude test and example directories
+recursive-exclude tests *
+recursive-exclude examples *
+recursive-exclude .venv *
+
+# Exclude cache and build artifacts
+global-exclude __pycache__
+global-exclude *.py[cod]
+global-exclude *.so
+global-exclude .DS_Store
